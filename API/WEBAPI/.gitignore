@@ -1,0 +1,31 @@
+# Arquivos e diretórios a serem ignorados
+
+# Arquivos de compilação
+*.dll
+*.exe
+*.pdb
+
+# Arquivos temporários
+obj/
+bin/
+
+# Arquivos de configuração específicos para IDEs
+.vscode/
+.idea/
+
+# Arquivos de build e saída
+/bin/
+/obj/
+
+# Arquivos de configuração do ambiente (exemplo para .NET Core)
+/appsettings.json
+/appsettings.Development.json
+
+# Arquivos de dependências gerados (exemplo para Node.js)
+/node_modules/
+
+# Logs e arquivos de saída
+/logs/
+
+# Arquivos do banco de dados SQLite
+*.db
