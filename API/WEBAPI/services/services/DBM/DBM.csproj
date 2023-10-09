@@ -8,9 +8,17 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Scripts\Rollback\" />
-      <Folder Include="Scripts\Rollout\" />
-      <Folder Include="Scripts\Roteiro\" />
+      <None Remove="Scripts\Rollout\Create.sql" />
+      <None Remove="appsettings.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+      <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="DATABASE\" />
     </ItemGroup>
 
 </Project>

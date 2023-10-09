@@ -1,0 +1,6 @@
+CREATE TABLE ACTION(
+                       ID INTEGER PRIMARY KEY AUTOINCREMENT,
+                       ACTION TEXT NOT NULL
+);
+
+CREATE INDEX idx_action ON ACTION(ID);
