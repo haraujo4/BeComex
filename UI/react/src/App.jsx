@@ -1,33 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react'
+import Botao from './components/botao/botao'
+import MonitorAntigo from './components/monitor/monitor'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [dadosAPI, setDadosAPI] = useState({});
+
+  const buscarDadosAPI = async () => {
+    try {
+      const resposta = await fetch('http://localhost:5079/api/Robo');
+      const dados = await resposta.json();
+      setDadosAPI(dados);
+    } catch (error) {
+      console.error('Erro ao buscar dados da API:', error);
+    }
+  };
+  console.log(buscarDadosAPI())
+
+  useEffect(() => {
+    buscarDadosAPI();
+  }, []);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="App">
+          <div>
+            <h1>{buscarFuncoesBotao()}</h1>
+          </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

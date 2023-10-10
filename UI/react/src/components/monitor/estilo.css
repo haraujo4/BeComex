@@ -1,0 +1,8 @@
+.monitor {
+    background-color: black;
+    color: green;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    border: 2px solid green;
+    border-radius: 10px;
+  }
