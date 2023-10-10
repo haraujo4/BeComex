@@ -25,7 +25,17 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/BLL/BLL.csproj": {
+                "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/BLL/BLL.csproj"
+              },
+              "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DAL/DAL.csproj": {
+                "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DAL/DAL.csproj"
+              },
+              "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DBM/DBM.csproj": {
+                "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DBM/DBM.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -41,6 +51,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.10, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -62,6 +76,185 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/BLL/BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/BLL/BLL.csproj",
+        "projectName": "BLL",
+        "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/BLL/BLL.csproj",
+        "packagesPath": "/home/helisson/.nuget/packages/",
+        "outputPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/BLL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/helisson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DAL/DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DAL/DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DAL/DAL.csproj",
+        "packagesPath": "/home/helisson/.nuget/packages/",
+        "outputPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/helisson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/BLL/BLL.csproj": {
+                "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/BLL/BLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DBM/DBM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DBM/DBM.csproj",
+        "projectName": "DBM",
+        "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DBM/DBM.csproj",
+        "packagesPath": "/home/helisson/.nuget/packages/",
+        "outputPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DBM/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/helisson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

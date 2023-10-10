@@ -7,10 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Helpers\" />
-      <Folder Include="Interface\Repository\" />
-      <Folder Include="Interface\Services\" />
-      <Folder Include="Services\" />
+      <Compile Remove="Helpers\Validation.cs" />
     </ItemGroup>
 
 </Project>
