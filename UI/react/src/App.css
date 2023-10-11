@@ -40,3 +40,37 @@
 .read-the-docs {
   color: #888;
 }
+.controles{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin: 1em;
+  width: 100%;
+}
+.botoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+  width: 50%;
+  margin-top: 2em;
+  font-size: 10px;
+  flex-wrap: wrap;
+}
+.botoes button{
+  margin-top: 3px;
+  width: 100%;
+}
+.painel{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+  width: 100%;
+}

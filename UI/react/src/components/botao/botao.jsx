@@ -1,15 +1,10 @@
 import * as React from 'react';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
-export default function botao(props){
-    return(
-        <Button variant="contained"
-        key={props.id}
-              nome={props.nome}
-              action={props.action}
-              onChange={props.onChange}>
-            {props.nome}
-        </Button>
-    )
+export default function Botao(props) {
+  return (
+    <Button variant="contained" key={props.id} onClick={props.onClick} value={props.value} size="small">
+      {props.children}
+    </Button>
+  );
 }

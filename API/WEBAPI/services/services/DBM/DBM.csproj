@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="DATABASE\database.db" />
       <None Remove="Scripts\Rollout\Create.sql" />
       <None Remove="appsettings.json" />
     </ItemGroup>

@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BLL
-build_property.ProjectDir = /home/helisson/Projetos/Teste/API/WEBAPI/services/services/BLL/
+build_property.ProjectDir = C:\Projects\BeComex\API\WEBAPI\services\services\BLL\

@@ -7356,24 +7356,34 @@
     ]
   },
   "packageFolders": {
-    "/home/helisson/.nuget/packages/": {}
+    "C:\\Users\\helisson.dearaujo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DBM/DBM.csproj",
+      "projectUniqueName": "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\DBM\\DBM.csproj",
       "projectName": "DBM",
-      "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DBM/DBM.csproj",
-      "packagesPath": "/home/helisson/.nuget/packages/",
-      "outputPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DBM/obj/",
+      "projectPath": "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\DBM\\DBM.csproj",
+      "packagesPath": "C:\\Users\\helisson.dearaujo\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\DBM\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/home/helisson/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\helisson.dearaujo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7421,7 +7431,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -23,6 +23,16 @@ builder.Services.AddTransient<IDbConnection>(db => new SQLiteConnection($"Data S
 builder.Services.AddTransient<IRoboActionRepository, RoboActionRepository>();
 builder.Services.AddTransient<IRoboActionServices, RoboActionServices>();
 
+
+
+builder.Configuration.AddJsonFile("appsettings.json");
+string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+
+builder.Services.AddHangfire(x => x.UseSqlServerStorage(connectionString));
+
+builder.Services.AddHangfireServer();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAnyOrigin",
@@ -32,10 +42,6 @@ builder.Services.AddCors(options =>
             .AllowAnyHeader());
 });
 
-builder.Services.AddHangfire(x => x.UseSqlServerStorage("DefaultConnection"));
-
-builder.Services.AddHangfireServer();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -44,17 +50,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("AllowAnyOrigin");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseHangfireDashboard();
+app.UseHangfireDashboard("/hangfire");
 
 app.Run();
-app.UseCors("AllowAnyOrigin");
+
 app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {

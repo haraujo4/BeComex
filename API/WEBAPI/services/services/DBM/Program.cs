@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Data.SQLite;
 using DBM.Scripts.Roteiro;
+using System.IO;
 class Program
 {
     static void Main(string[] args)
@@ -8,6 +10,13 @@ class Program
         string databasePath = "../../../DATABASE/database.db";
         string rolloutDirectory = "../../../Scripts/Rollout";
         string rollbackDirectory = "../../../Scripts/Rollback";
+
+        string databaseDirectory = Path.GetDirectoryName(databasePath);
+
+        if (!Directory.Exists(databaseDirectory))
+        {
+            Directory.CreateDirectory(databaseDirectory); // Cria diretórios ausentes
+        }
 
         if (!File.Exists(databasePath))
         {

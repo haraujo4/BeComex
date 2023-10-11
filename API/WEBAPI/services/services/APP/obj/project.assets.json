@@ -12768,38 +12768,48 @@
     ]
   },
   "packageFolders": {
-    "/home/helisson/.nuget/packages/": {}
+    "C:\\Users\\helisson.dearaujo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/APP/APP.csproj",
+      "projectUniqueName": "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\APP\\APP.csproj",
       "projectName": "APP",
-      "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/APP/APP.csproj",
-      "packagesPath": "/home/helisson/.nuget/packages/",
-      "outputPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/APP/obj/",
+      "projectPath": "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\APP\\APP.csproj",
+      "packagesPath": "C:\\Users\\helisson.dearaujo\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\APP\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/home/helisson/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\helisson.dearaujo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/BLL/BLL.csproj": {
-              "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/BLL/BLL.csproj"
+            "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\BLL\\BLL.csproj"
             },
-            "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DAL/DAL.csproj": {
-              "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DAL/DAL.csproj"
+            "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\DAL\\DAL.csproj"
             },
-            "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DBM/DBM.csproj": {
-              "projectPath": "/home/helisson/Projetos/Teste/API/WEBAPI/services/services/DBM/DBM.csproj"
+            "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\DBM\\DBM.csproj": {
+              "projectPath": "C:\\Projects\\BeComex\\API\\WEBAPI\\services\\services\\DBM\\DBM.csproj"
             }
           }
         }
@@ -12874,7 +12884,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
